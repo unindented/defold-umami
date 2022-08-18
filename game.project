@@ -1,10 +1,11 @@
 [project]
-title = Google Analytics
-version = 0.9
-dependencies = https://github.com/andsve/dirtylarry/archive/master.zip,https://github.com/britzl/deftest/archive/2.3.0.zip
+title = Umami
+version = 0.1.0
+dependencies#0 = https://github.com/andsve/dirtylarry/archive/master.zip
+dependencies#1 = https://github.com/britzl/deftest/archive/2.7.2.zip
 
 [bootstrap]
-main_collection = /tests/tests.collectionc
+main_collection = /example/example.collectionc
 
 [input]
 game_binding = /input/game.input_bindingc
@@ -13,27 +14,25 @@ game_binding = /input/game.input_bindingc
 width = 1280
 height = 720
 
-[physics]
-scale = 0.02
-
 [script]
 shared_state = 1
 
 [library]
-include_dirs = googleanalytics
+include_dirs = umami
 
-[googleanalytics]
-tracking_id = UA-87977671-1
-dispatch_period = 300
-queue_save_period = 60
+[umami]
+dsn = https://my-umami.vercel.app
+website_id = ace8426d-8e00-4a2f-bf62-e28d8d5d68cf
+dispatch_interval = 1
+save_interval = 30
 verbose = 1
 
 [ios]
-bundle_identifier = com.britzl.defold.googleanalytics
+bundle_identifier = org.unindented.umami
 
 [android]
-package = com.britzl.defold.googleanalytics
+package = org.unindented.umami
 
 [osx]
-bundle_identifier = com.britzl.defold.googleanalytics
+bundle_identifier = org.unindented.umami
 

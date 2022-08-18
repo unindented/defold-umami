@@ -1,0 +1,33 @@
+name: Test
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Cache tools
+        id: cache-tools
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-tools
+        with:
+          path: tools
+          key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('Makefile') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ env.cache-name }}-
+            ${{ runner.os }}-
+
+      - name: Test
+        run: make test

@@ -1,0 +1,16 @@
+local test_file = require("test.test_file")
+local test_queue = require("test.test_queue")
+local test_reporter = require("test.test_reporter")
+local test_umami = require("test.test_umami")
+local test_user_agent = require("test.test_user_agent")
+
+local deftest = require("deftest.deftest")
+
+function init(self)
+  deftest.add(test_file)
+  deftest.add(test_queue)
+  deftest.add(test_reporter)
+  deftest.add(test_umami)
+  deftest.add(test_user_agent)
+  deftest.run()
+end

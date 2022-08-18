@@ -1,4 +1,5 @@
-
+/build
+/tools
 .externalToolBuilders
 .DS_Store
 .lock-wscript

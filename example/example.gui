@@ -11,7 +11,7 @@ background_color {
 }
 nodes {
   position {
-    x: 231.89201
+    x: 240.0
     y: 360.0
     z: 0.0
     w: 1.0
@@ -62,11 +62,14 @@ nodes {
   alpha: 1.0
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
+  enabled: true
+  visible: true
 }
 nodes {
   position {
-    x: -31.89201
-    y: -3.7831788
+    x: -0.0
+    y: -0.0
     z: 0.0
     w: 1.0
   }
@@ -102,6 +105,8 @@ nodes {
   alpha: 1.0
   template: "/dirtylarry/button.gui"
   template_node_child: false
+  custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -157,6 +162,9 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
+  enabled: true
+  visible: true
 }
 nodes {
   position {
@@ -221,11 +229,14 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
+  enabled: true
+  visible: true
 }
 nodes {
   position {
-    x: -31.89201
-    y: -103.928825
+    x: -0.0
+    y: -100.0
     z: 0.0
     w: 1.0
   }
@@ -261,6 +272,8 @@ nodes {
   alpha: 1.0
   template: "/dirtylarry/button.gui"
   template_node_child: false
+  custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -316,6 +329,9 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
+  enabled: true
+  visible: true
 }
 nodes {
   position {
@@ -380,11 +396,14 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
+  enabled: true
+  visible: true
 }
 nodes {
   position {
-    x: -31.89201
-    y: -205.7529
+    x: -0.0
+    y: -200.0
     z: 0.0
     w: 1.0
   }
@@ -420,6 +439,8 @@ nodes {
   alpha: 1.0
   template: "/dirtylarry/button.gui"
   template_node_child: false
+  custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -475,6 +496,9 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
+  enabled: true
+  visible: true
 }
 nodes {
   position {
@@ -539,61 +563,10 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
-}
-nodes {
-  position {
-    x: 837.4093
-    y: 20.554094
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 1.0
-    y: 1.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_SPINE
-  blend_mode: BLEND_MODE_ALPHA
-  id: "spine"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
-  adjust_mode: ADJUST_MODE_FIT
-  layer: ""
-  inherit_alpha: true
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: false
-  size_mode: SIZE_MODE_AUTO
-  spine_scene: "character"
-  spine_default_animation: ""
-  spine_skin: ""
+  custom_type: 0
+  enabled: true
+  visible: true
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
 max_nodes: 512
-spine_scenes {
-  name: "character"
-  spine_scene: "/assets/character/character.spinescene"
-}
